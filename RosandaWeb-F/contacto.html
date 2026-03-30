@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Rosanda</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="imagenes/Imagen_Logo_Rosanda.png" alt="Rosanda">
+        </a>
+
+       <nav class="menu">
+            <a href="historia.html">NUESTRA HISTORIA</a>
+            <a href="huevos.html">LOS HUEVOS</a>
+            <a href="emprende.html">EMPRENDE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="comprar.html">COMPRAR</a>
+        </nav>
+        
+    </header>
+
+    <!-- CONTENIDO -->
+    <section class="contacto">
+
+        <h1>CONTACTO</h1>
+
+        <div class="contacto-container">
+
+            <!-- IZQUIERDA -->
+            <div class="contacto-info">
+
+                <h4>INDUSTRIA AVÍCOLA ROSANDA</h4>
+                <p>Email: info@rosanda.com</p>
+                <p>Tel: 0000-0000</p>
+
+                <h4>OFICINAS CENTRALES</h4>
+                <p>Ciudad de Guatemala</p>
+
+                <h4>SALA DE VENTAS MIXCO</h4>
+                <p>Zona 4 de Mixco</p>
+
+                <!-- 👇 BOTONES AQUÍ -->
+                <div class="ubicaciones">
+                    <button onclick="cambiarMapa('Rosanda')"> Ver Mapa de Industria Avícola Rosanda</button>
+                    <button onclick="cambiarMapa('Centrales')">Ver Mapa de Oficinas Centrales</button>
+                    <button onclick="cambiarMapa('Mixco')">Ver Mapa de Sala de Ventas Mixco</button>
+                </div>
+
+                <h4>QUEREMOS CONOCERTE</h4>
+
+                <input type="text" placeholder="Nombre..." required>
+                <input type="email" placeholder="Correo electrónico..." required>
+                <input type="tel" placeholder="Teléfono...">
+
+                <p class="correo">info@rosanda.com</p>
+
+                <h3>PBX 0000-0000 <i class="fab fa-whatsapp"></i></h3>
+
+                <a href="comprar.html" class="btn-principal">COMPRA AQUÍ</a>
+
+                <a href="trabaja.html" class="btn-secundario">TRABAJA CON NOSOTROS</a>
+                
+
+            </div>
+
+            <!-- DERECHA -->
+            <div class="contacto-form">
+                
+                <!-- MAPA -->
+                <div class="mapa">
+                    <!--
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574.739671969014!2d-90.32678380062586!3d14.289791656448742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589b5324674b49b%3A0x270922c617371ad8!2sIndustria%20Avicola%20Rosanda%2C%20S.A.!5e0!3m2!1ses!2sgt!4v1774502412157!5m2!1ses!2sgt"
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    -->
+                    <iframe 
+                        id="mapaIframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574.739671969014!2d-90.32678380062586!3d14.289791656448742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589b5324674b49b%3A0x270922c617371ad8!2sIndustria%20Avicola%20Rosanda%2C%20S.A.!5e0!3m2!1ses!2sgt!4v1774502412157!5m2!1ses!2sgt"
+                        width="100%" 
+                        height="200"
+                        style="border:0;">
+                    </iframe>
+                </div>
+
+                <!-- MENSAJE -->
+                <textarea placeholder="Mensaje..."></textarea>
+
+                <button class="btn-enviar">ENVIAR</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER 
+    <div id="footer-container"></div>
+    <script src="footer.js"></script>
+    -->
+    <<div class="cta-footer">
+
+        <div class="linea">
+            <!-- <span class="icono">🐔Gallina</span> -->
+            <img src="imagenes/Gallologo.png" class="icono" width="55">
+        </div>
+            <a href="https://wa.me/50251465011?text=Hola%20🐔%20quiero%20hacer%20un%20pedido%20de%20huevos%20🥚%20con%20Rosanda.%20¿Me%20pueden%20apoyar%3F" 
+    class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+        </a>
+    </div>
+    <footer class="footer-pro">
+        <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/50251465011?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20la%20Granja%20Av%C3%ADcola%20Rosanda.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Avicola-Rosanda-Guatemala-100063716674182/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+<script>
+document.querySelector(".btn-enviar").addEventListener("click", function() {
+
+    let nombre = document.querySelector('input[placeholder="Nombre..."]').value;
+    let correo = document.querySelector('input[placeholder="Correo electrónico..."]').value;
+    let mensaje = document.querySelector("textarea").value;
+
+    let texto = `Hola, soy ${nombre}%0AEmail: ${correo}%0AMensaje: ${mensaje}`;
+
+    let telefono = "50251465011"; // TU NÚMERO
+
+    window.open(`https://wa.me/${telefono}?text=${texto}`, "_blank");
+});
+</script>
+<script>
+function cambiarMapa(lugar) {
+    
+    let mapa = document.getElementById("mapaIframe");
+
+    if (lugar === "Rosanda") {
+        mapa.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574.739671969014!2d-90.32678380062586!3d14.289791656448742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589b5324674b49b%3A0x270922c617371ad8!2sIndustria%20Avicola%20Rosanda%2C%20S.A.!5e0!3m2!1ses!2sgt!4v1774502412157!5m2!1ses!2sgt";
+    }
+
+    if (lugar === "Centrales") {
+        
+    
+        mapa.src = "https://www.google.com/maps?q=Oficinas Centrales Rosanda zona 13&output=embed";
+    }
+
+    if (lugar === "Mixco") {
+        mapa.src = "https://www.google.com/maps?q=Calzada San Juan cuarta avenida A 4-20 Mixco, Colonia Santa Marta&output=embed";
+    }
+}
+</script>
+</body>
+</html>

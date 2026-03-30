@@ -1,0 +1,1054 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f4f4; 
+    /* background-color: #e9e9e9; */
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    display: block;
+    /* max-height: 60px; */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+/* 🔥 EFECTO HOVER */
+.logo:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 12px;
+}
+
+.btn-comprar {
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-principal {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.btn-principal:hover {
+    background-color: gray;
+}
+/* IMAGEN 
+.hero-img img {
+    
+    width: 300px;
+} */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 🔥 esto cambia todo */
+    gap: 40px;
+    max-width: 1200px; /* 🔥 limita ancho */
+    margin: 0 auto; /* 🔥 centra TODO el bloque */
+}
+
+.hero-text,
+.hero-img {
+    flex: 1;
+}
+
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    justify-content: flex-start;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+}
+
+/* línea oculta */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+/* animación */
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    border-top: 1px solid #ccc;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secundario {
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+}
+
+/* REDES */
+.redes span {
+    margin: 0 5px;
+    font-size: 14px;
+}
+/* HISTORIA */
+.historia {
+    padding: 40px;
+}
+
+.historia h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* TOP */
+.historia-top {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.historia-texto {
+    width: 50%;
+}
+
+.historia-img img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* MIDDLE */
+.historia-middle {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.img-secundaria img {
+    width: 300px;
+}
+
+.texto-secundario {
+    width: 50%;
+}
+
+/* VALORES */
+.valores {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 180px;
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* HUEVOS */
+.huevos {
+    padding: 40px;
+}
+
+.huevos h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* TOP */
+.huevos-top {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.texto {
+    width: 50%;
+}
+
+.imagen img {
+    width: 350px;
+}
+
+/* CERTIFICACIONES */
+.certificaciones {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.cert {
+    text-align: center;
+}
+
+.cert img {
+    width: 80px;
+}
+
+.certificaciones-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.certificaciones-info {
+    width: 50%;
+}
+
+.certificaciones-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.certificaciones {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* CLASIFICACIÓN */
+.clasificacion-texto {
+    margin-bottom: 15px;
+}
+
+.clasificacion-img img {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* TABLA */
+.tabla-img img {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+}
+
+/* BOTONES */
+.botones {
+    margin-bottom: 20px;
+}
+.footer-simple {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+}
+
+.footer-simple p {
+    margin: 0;
+}
+
+.footer-pro {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+/* TEXTO */
+.footer-pro p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ICONOS */
+.social-icons a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+/* nuevos estilos para huevos */
+
+.huevos-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.huevos-info {
+    width: 50%;
+}
+
+.huevos-imagen {
+    width: 50%;
+}
+
+.huevos-imagen img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* CERTIFICACIONES */
+.certificaciones {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.cert {
+    text-align: center;
+}
+
+.cert img {
+    width: 60px;
+}
+
+.huevos-info h3 {
+    margin-top: 20px;
+}
+
+.clasificacion-texto {
+    margin-top: 10px;
+}
+
+.texto p,
+.clasificacion-texto {
+    text-align: justify;
+}
+
+/* EMPRENDE */
+.emprende {
+    padding: 40px;
+}
+
+.emprende h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* TOP */
+.emprende-top {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.comprar-top {
+    /* display: flex;
+    gap: 40px;
+    align-items: center; */
+    margin-bottom: 2px;
+}
+
+.comprar-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.emprende-texto {
+    width: 50%;
+    line-height: 1.6;
+}
+
+.emprende-img img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.comprar-img img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.comprar-img {
+    width: 40%;
+}
+
+/* BANNER GRANDE */
+.emprende-banner img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 20px;
+}
+.emprende-banner img {
+    filter: brightness(70%);
+}
+/* CONTACTO */
+.contacto {
+    padding: 40px;
+}
+
+.contacto h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* CONTENEDOR */
+.contacto-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* IZQUIERDA */
+.contacto-info {
+    width: 50%;
+}
+
+.contacto-info h4 {
+    margin-top: 15px;
+}
+
+.contacto-info input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.correo {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* DERECHA */
+.contacto-form {
+    width: 50%;
+}
+
+.contacto-form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+/*
+.btn-enviar {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+*/
+/* Agregando ajusto */
+.contacto-info h3 {
+    margin-bottom: 15px;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 15px;
+}
+/* fin del ajuste */
+.mapa {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.btn-secundario {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.btn-secundario:hover {
+    background: black;
+    color: white;
+}
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinea a la izquierda */
+}
+
+.ubicaciones {
+    display: flex;
+    flex-direction: column; /* 🔥 vertical */
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.ubicaciones button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ubicaciones button:hover {
+    background: black;
+    color: white;
+}
+/* para que al hacer hover se cambie a negro */
+.menu a:hover {
+    background-color: #E31E24;
+    color: white;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* viene de pagina de pedidos externa revisar si no hay conflicto */
+
+.intro-pedidos {
+    text-align: center;
+    max-width: 900px;
+    margin: 60px auto 30px auto;
+    /* background: #d4a017; */
+}
+
+
+.proceso-pedido {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.pasos {
+    display: flex;
+    gap: 20px;
+    margin-top: px;
+}
+
+.paso {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.paso:hover {
+    transform: translateY(-5px);
+}
+
+.confianza {
+    background: #fafafa;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.confianza-box {
+    max-width: 800px;
+    margin: auto;
+}
+
+.info-adicional {
+    max-width: 900px;
+    margin: 40px auto;
+}
+.formulario-pedidos {
+    max-width: 1000px; 
+    margin: 1px auto 
+}
+.formulario-pedidos {
+    width: 70%;
+}
+
+.formulario-pedidos {
+    /*background: white; */
+    /* background: #a87f7f ; */
+    /* background: #b6af9f; */
+    background: #cfcdcd;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+
+.formulario-pedidos h2 {
+    margin-bottom: 20px;
+}
+.pedido-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.datos-transferencia {
+    display: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 4;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #d4a017;
+    outline: none;
+    box-shadow: 0 0 5px rgba(212,160,23,0.3);
+}
+
+.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-enviar {
+    background-color: #d4a017;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.btn-enviar:hover {
+    background-color: #b88a12;
+}
+@media (max-width: 768px) {
+    .pedido-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: span 1;
+    }
+}
+.mensaje-exito {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+.botonC {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d4a017;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cta-footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Línea con icono */
+.linea {
+    position: relative;
+    height: 2px;
+    background: #999;
+    margin: 20px 0 30px;
+}
+
+.icono {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #f4f4f4; /* mismo fondo */
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* para el gallito */
+.linea {
+    position: relative; /* 🔥 ESTO ES LO QUE TE FALTA */
+    height: 2px;
+    background: #999;
+    margin: 30px 0;
+}
+
+
+.icono {
+    position: absolute;
+    top: -25px; /* 🔥 súbelo más (antes -15px) */
+    left: 20px;
+    background: #eaeaea;
+    padding: 0 5px;
+}
+
+/* contenedor */
+.hero-img.slider {
+    position: relative;
+    height: 350px; /* ajusta */
+    overflow: hidden;
+}
+
+/* slides */
+.hero-img .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.hero-img .slide.active {
+    opacity: 1;
+}
+
+/* imágenes */
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hero-img img {
+    object-fit: contain;
+    background: #f4f4f4; /* relleno bonito */
+}
+.hero-img img {
+    padding: 10px;
+}
+
+.hero-img.slider {
+    background: red;
+}
+
+/*
+.hero-img.slider {
+    position: relative;
+    height: 300px;
+}
+*/
+.hero-img.slider {
+    position: relative;
+    width: 100%;
+    height: 300px; /* 🔥 obligatorio */
+}
+
+/* termina Estilos para pedidos externos revisar */
+/* Esto debe ir al final comiensa el responsive */
+
+@media (max-width: 768px) {
+    .hero-img.slider {
+        height: 250px; /* 🔥 clave */
+    }
+}
+
+/* esto es de prueba eliminar */
+.hero-img {
+    background: blue !important;
+    min-height: 200px !important;
+}
+
+.hero-img.slider {
+    background: red !important;
+    min-height: 200px !important;
+}
+/* aqui termina la prueba important */
+
+.slide img {
+    transition: transform 5s ease;
+}
+
+.slide.active img {
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    /* SECCIONES CON FLEX (TODAS) */
+    .hero,
+    .historia-top,
+    .historia-middle,
+    .huevos-top,
+    .emprende-top,
+    .contacto-container {
+        flex-direction: column;
+    }
+
+    /* ANCHOS */
+    .hero-text,
+    .hero-img,
+    .historia-texto,
+    .texto-secundario,
+    .texto,
+    .imagen,
+    .emprende-texto,
+    .emprende-img,
+    .contacto-info,
+    .contacto-form {
+        width: 100%;
+    }
+
+    /* IMÁGENES */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* BOTONES */
+    .btn-principal,
+    .btn-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+    .huevos-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .huevos-info,
+    .huevos-imagen {
+        width: 100%;
+    }
+
+    .certificaciones {
+        justify-content: center;
+    }
+}
+
+/*  Esto es para el botón de Rosanda */
+
+@media (max-width: 768px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+
+    .menu {
+        width: 100%;
+        padding: 0 20px; /* opcional para que no pegue a los bordes */
+    }
+
+    .menu a {
+        width: 100%;
+        margin: 0; /* 🔥 quita el margen lateral */
+        box-sizing: border-box;
+    }
+
+}
+@media (max-width: 768px) {
+    .comprar-layout {
+        flex-direction: column;
+    }
+
+    .comprar-img,
+    .formulario-pedidos {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-img.slider {
+        height: 250px; /* 🔥 importante */
+        width: 100%;
+    }
+}

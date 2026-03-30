@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabaja con Nosotros</title>
+    <link rel="stylesheet" href="stylesstrabaja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<header class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="imagenes/Imagen_Logo_Rosanda.png" alt="Rosanda">
+        </a>
+
+        <nav class="menu">
+            <a href="historia.html">NUESTRA HISTORIA</a>
+            <a href="huevos.html">LOS HUEVOS</a>
+            <a href="emprende.html">EMPRENDE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="comprar.html">COMPRAR</a>
+        </nav>
+    
+</header>
+
+<section class="main">
+    <h1>TRABAJA CON NOSOTROS</h1>
+
+    <div class="content">
+        <!-- Imagen -->
+        <div class="image-box"></div>
+
+        <!-- Texto -->
+        <div class="text-box">
+            <p>
+                En Industria Avícola Rosanda creemos que las personas son el corazón de todo lo que hacemos.
+                Desde hace más de 40 años, construimos nuestra historia con trabajadores comprometidos y
+                respetuosos que comparten nuestros valores y nuestro propósito de alimentar a Guatemala.
+            </p>
+
+            <p>
+                Somos una empresa certificada en SMETA, lo que refleja nuestro compromiso con prácticas
+                laborales responsables, condiciones de trabajo justas, ética, seguridad y bienestar.
+                Valoramos a quienes hacen bien su trabajo, cumplen y crecen con nosotros día a día.
+            </p>
+
+            <p>
+                Si buscas formar parte de una empresa guatemalteca con trayectoria, valores sólidos y visión
+                de futuro, Rosanda es tu lugar. Aquí encontrarás un equipo que trabaja con responsabilidad,
+                respeto y orgullo por lo que produce.
+            </p>
+            <!-- Comabiamos el boton original 
+            <button class="btn-outline">ENVIAR CV</button>
+            -->
+
+            <form action="upload.php" method="POST" enctype="multipart/form-data" class="form-cv">
+
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+                <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+                <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+
+                <button type="submit" class="btn-outline">ENVIAR CV</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Información -->
+    <div class="info">
+        <div>
+            <h3>RECURSOS HUMANOS</h3>
+            <p>13 Avenida 1-47 zona 2 de Mixco</p>
+            <p>Col. La Escuadrilla, Guatemala CA</p>
+            <p>RRHH@huevosrosanda.com</p>
+            <p>TEL +502 2337-7777</p>
+        </div>
+
+        <div>
+            <h3>LLENA EL FORMULARIO</h3>
+            <p>
+                Te invitamos a completar nuestro formulario para conocer las plazas disponibles y formar
+                parte de nuestro equipo
+            </p>
+        </div>
+
+        <div>
+            <h3>CIUILAPA SANTA ROSA</h3>
+            <p>OFICINAS CENTRALES</p>
+            <p>SALA DE VENTAS MIXCO</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <button class="btn-outline small">TRABAJA CON NOSOTROS</button>
+    <div class="socials">
+        <span>●</span>
+        <span>●</span>
+        <span>●</span>
+        <span>●</span>
+        <span>●</span>
+    </div>
+</footer>
+ <footer class="footer-pro">
+        <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/50251465011?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20la%20Granja%20Av%C3%ADcola%20Rosanda.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Avicola-Rosanda-Guatemala-100063716674182/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

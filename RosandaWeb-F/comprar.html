@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprar - Rosanda</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="imagenes/Imagen_Logo_Rosanda.png" alt="Rosanda">
+        </a>
+
+       <nav class="menu">
+            <a href="historia.html">NUESTRA HISTORIA</a>
+            <a href="huevos.html">LOS HUEVOS</a>
+            <a href="emprende.html">EMPRENDE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="comprar.html">COMPRAR</a>
+        </nav>  
+        <!-- <a href="#" class="btn-comprar">COMPRAR</a> -->
+    </header>
+
+    <!-- CONTENIDO -->
+    <section class="comprar-layout">
+        <div class="comprar-img">
+            <h1>COMPRAR</h1>
+            <img src="imagenes/cajero_gorra_azul.png">
+        </div>
+        <div class="formulario-pedidos">
+
+            <form action="#" method="POST" class="pedido-form">     
+
+                <!-- Mensaje / Pedido -->
+                
+                <!-- Pedido estructurado -->
+                <div class="form-group">
+                    <label>Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Medida</label>
+                    <select  id="medida"  name="medida" required>
+                        <option value="">Seleccione</option>
+                        <option value="0" data-desc="Caja" selected >Caja</option>
+                        <option value="1" data-desc="Cartón de 30 unidades">Cartón (30 huevos)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Producto</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Seleccione</option>
+                        <option value="Huevo Blanco" selected>Huevo Blanco</option>
+                        <option value="Huevo Rojo">Huevo Rojo</option>
+                        <option value="Huevo Orgánico">Huevo Orgánico</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo de Huevo</label>
+                    <select id="tipo_huevo" name="tipo_huevo">
+                        <option value="">Seleccione</option>             
+                        <option value="0" data-desc="optimo">Óptimo</option>
+                        <option value="1" data-desc="extragrande">Extragrande</option>
+                        <option value="2" data-desc="grande" selected >Grande</option>
+                        <option value="3" data-desc="mediano">Mediano</option>
+                        <option value="4" data-desc="pequeño">Pequeño</option>
+                    </select>
+                </div>
+
+        <!-- Observaciones 
+                <div class="form-group full">
+                    <label>Observaciones adicionales</label>
+                    <textarea name="mensaje" rows="1" placeholder="Indique cualquier detalle adicional..."></textarea>
+                </div>
+                -->
+
+                <!--  Esto ya no
+                <div class="form-group full">
+                    <label>Detalle del Pedido</label>
+                    <textarea name="mensaje" rows="5" required placeholder="Especifique productos, cantidades y observaciones..."></textarea>
+                </div>
+                -->
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label >Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <!-- Correo 
+                <div class="form-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" name="correo" >
+                </div>
+
+                <!-- Teléfono 
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" >
+                </div>
+                -->
+                <!-- Nombre Negocio -->
+                <div class="form-group">
+                    <label>Negocio</label>
+                    <input id="negocio" name="empresa" required>
+                </div>
+
+                <!-- Dirección -->
+                <div class="form-group full">
+                    <label>Dirección de Entrega</label>
+                    <input id="direccion" name="direccion" required>
+                </div>
+
+                <!-- Tipo de Cliente -->
+                <div class="form-group">
+                    <label>Tipo de Cliente</label>
+                    <select id="tipo_cliente"  name="tipo_cliente" required>
+                        <option value="">Seleccione una opción</option>
+                        <option>Tienda de Barrio</option>
+                        <option>Centro de Venta</option>
+                        <option>Restaurante</option>
+                        <option>Caseta</option>
+                        <option>Supermercado</option>
+                    </select>
+                </div>
+
+                <!-- Método de Contacto -->
+                <div class="form-group">
+                    <label>Preferencia de Contacto</label>
+                    <select name="contacto">
+                        <option>Llamada</option>
+                        <option selected>WhatsApp</option>
+                        <option>Correo Electrónico</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    
+                    <label>Forma de Pago</label>
+                    <select name="forma_pago" required>
+                        <option value="">Seleccione</option>
+                        <option value="Transferencia Bancaria" >Transferencia Bancaria</option>
+                        <option value="Pago contra entrega" selected >Pago contra entrega</option>
+                    </select>
+                </div>
+                <div id="datos-transferencia" class="datos-transferencia">
+                    <div class="form-group">
+                        <label>Nombre del Banco</label>
+                        <input type="text" name="banco">
+                    </div>
+                    <div class="form-group">
+                        <label>Autorización No.</label>
+                        <input type="text" name="Autorización">
+                    </div>
+                    <div class="form-group">
+                        <label>Cuenta Debitada</label>
+                        <input type="text" name="Cuenta_Debitada">
+                    </div>
+                    <div class="form-group">
+                        <label>Cuenta Acreditada</label>
+                        <input type="text" name="Cuenta_Acreditada">
+                    </div>
+                    <div class="form-group">
+                        <label>Monto</label>
+                        <input type= "number" name="Monto">
+                    </div>
+                </div>
+                <h3>Total: Q<span id="total">0</span></h3>
+
+
+                <!-- Política 
+                <div class="form-group full checkbox">
+                    <input type="checkbox" required>
+                    <span>Acepto la política de privacidad.</span>
+                </div>
+                -->
+                <!--Botón de Cálcular -->
+                <button class="btn-principal" type="button" onclick="calcularTotal()">Calcular</button>
+
+                <!-- Botón -->
+                 <button type="submit" name="accion" value="whatsapp" class="btn-principal">
+                    Enviar por WhatsApp
+                </button>
+                <div class="form-group full">
+                    <!--
+                    <button type="submit" class="btn-enviar">
+                        Enviar Pedido
+                    </button>
+                    -->
+                    <!--
+                    <button type="submit" name="accion" value="whatsapp" class="btn-principal">
+                    Enviar por WhatsApp
+                    </button>
+                    -->
+                    <!--
+                    <button type="submit" name="accion" value="Base de Datos" class="btn-enviar">
+                    Enviar Pedido a Base de Datos
+                    </button>
+                    -->
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="mensaje-exito" class="mensaje-exito">
+            ✅ Pedido enviado con éxito. Nos pondremos en contacto pronto.
+    </div>
+    <div class="linea">
+        <!-- <span class="icono">🐔Gallina</span> -->
+        <img src="imagenes/Gallologo.png" class="icono" width="55">
+    </div>
+        
+    
+
+    <footer class="footer-pro">
+        <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/50251465011?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20la%20Granja%20Av%C3%ADcola%20Rosanda.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Avicola-Rosanda-Guatemala-100063716674182/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+    <!-- FOOTER DINÁMICO 
+    <div id="footer-container"></div>
+    <script src="footer.js"></script>
+    -->
+<script src="scriptComprar.js"></script>
+</body>
+</html>

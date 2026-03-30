@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rosanda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="imagenes/Imagen_Logo_Rosanda.png" alt="Rosanda">
+        </a>
+
+        <nav class="menu">
+            <a href="historia.html">NUESTRA HISTORIA</a>
+            <a href="huevos.html">LOS HUEVOS</a>
+            <a href="emprende.html">EMPRENDE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="comprar.html">COMPRAR</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>LOS HUEVOS</h1>
+            <h3>Creemos en los huevos.</h3>
+
+            <p class="clasificacion-texto">
+                Creemos en los huevos. <br>
+                Un superalimento esencial, nutritivo y natural. <br>
+                En Rosanda somos la aliada que los cuida con calidad,
+                inocuidad y respeto por las aves, desde 1980.
+            </p>
+
+            <a href="comprar.html" class="btn-principal">COMPRA AQUÍ</a>
+        </div>
+        <!--
+        <div class="hero-img">
+            <img src="imagenes/Siempe_Frescos.png" alt="Huevo Rosanda">
+        </div>
+        -->
+        <!-- Creo un slider -->
+         <div class="hero-img slider">
+
+            <div class="slide active">
+                <img src="imagenes/Siempe_Frescos.png">
+            </div>
+
+            <div class="slide">
+                <img src="imagenes/huevos_libres_a.png">
+            </div>
+
+            <div class="slide">
+                <img src="imagenes/Huevos_Granja.png">
+            </div>
+            <div class="slide">
+                <img src="imagenes/InspeccionMaga.png">
+            </div>
+            <div class="slide">
+                <img src="imagenes/GallinaColorada.png">
+            </div>
+             <div class="slide">
+                <img src="imagenes/HuellaVerdeCert.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER old
+    <footer class="footer">
+        <a href="#" class="btn-secundario">TRABAJA CON NOSOTROS</a>
+
+        <div class="redes">
+            <span>in</span>
+            <span>yt</span>
+            <span>tt</span>
+            <span>ig</span>
+            <span>fb</span>
+        </div>
+    </footer>
+    <footer class="footer-simple">
+        <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
+    </footer>
+    -->
+    <div class="cta-footer">
+
+        <div class="linea">
+            <!-- <span class="icono">🐔Gallina</span> -->
+            <img src="imagenes/Gallologo.png" class="icono" width="70">
+        </div>
+            <a href="https://wa.me/50251465011?text=Hola%20🐔%20quiero%20hacer%20un%20pedido%20de%20huevos%20🥚%20con%20Rosanda.%20¿Me%20pueden%20apoyar%3F" 
+    class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+        </a>
+    </div>
+    <footer class="footer-pro">
+        <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/50251465011?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20la%20Granja%20Av%C3%ADcola%20Rosanda.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Avicola-Rosanda-Guatemala-100063716674182/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+         
+    </footer>
+    <script>
+        let slides = document.querySelectorAll(".hero-img .slide");
+        let index = 0;
+
+        setInterval(() => {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }, 6000);
+    </script>
+</body>
+</html>
