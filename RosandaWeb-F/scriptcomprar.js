@@ -41,7 +41,7 @@ function calcularTotal() {
     document.getElementById("total").innerText = total;
     // producto
     let producto = document.getElementById("producto").value;
-    alert("Calculando el total del pedido \n Se requieren "+ cantidad+" "+unidad_med_desc+" de "+producto+" "+tipo_h+"\n a precio unitario de  "+precio+" para un total de "+total);
+    //alert("Calculando el total del pedido \n Se requieren "+ cantidad+" "+unidad_med_desc+" de "+producto+" "+tipo_h+"\n a precio unitario de  "+precio+" para un total de "+total);
 
     //alert("Rutina Cálculo ✅");
 }
@@ -141,18 +141,19 @@ function enviarWhatsApp(nombre, cantidad, unidad_med_desc, producto, tipo_h, pre
 
     // Crear mensaje
     let Textomensaje = `PEDIDO WEB AUTOMÁTICO
-    _______________________________________________________
-    Cliente:        ${nombre}
-    Negocio:        ${negocio}
-    direccion:      ${direccion}
-    Segmento:       ${tipo_cliente}
+    PARA FRESCO GALAN
+    ____________________________________________________________
+    Cliente  :  ${nombre}
+    Negocio  :  ${negocio}
+    direccion:  ${direccion}
+    Segmento :  ${tipo_cliente}
 
-    Medida:         ${unidad_med_desc} 
-    Cantidad        ${cantidad} 
-    Producto:       ${producto}
-    Tamaño:         ${tipo_h} 
-    Unitario:       ${precio} 
-    Total de        ${total}
+    Medida   :  ${unidad_med_desc} 
+    Cantidad :  ${cantidad} 
+    Producto :  ${producto}
+    Tamaño   :  ${tipo_h} 
+    Unitario :  ${precio} 
+    Total de    ${total}
 
     Por favor procesar este pedido.`;
     
@@ -181,7 +182,7 @@ function enviarWhatsApp(nombre, cantidad, unidad_med_desc, producto, tipo_h, pre
         //window.open(url, "_blank");        
         }
 
-    alert("Pedido enviado al whatsapp correctamente ✅");
+    //alert("Pedido enviado al whatsapp correctamente ✅");
 
 
    

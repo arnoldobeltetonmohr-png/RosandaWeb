@@ -248,3 +248,24 @@ body {
 .form-cv button {
     width: fit-content;
 }
+.cta-footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Línea con icono */
+.linea {
+    position: relative;
+    height: 2px;
+    background: #0A3A8D;
+    margin: 20px 0 30px;
+}
+
+.icono {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: #f4f4f4;
+    padding: 0 8px;
+    font-size: 34px; /* ajusta tamaño del emoji */
+}
