@@ -44,6 +44,21 @@ function calcularTotal() {
     //alert("Calculando el total del pedido \n Se requieren "+ cantidad+" "+unidad_med_desc+" de "+producto+" "+tipo_h+"\n a precio unitario de  "+precio+" para un total de "+total);
 
     //alert("Rutina Cálculo ✅");
+    document.querySelector('[type="submit"]').disabled = false;
+
+    // Mostrar en el formulario
+    document.getElementById("total").innerText = total;
+
+    // Mostrar en la barra fija 👇
+    document.getElementById("total-fijo").innerText = total;
+
+    // Animación (opcional 🔥)
+    let totalElemento = document.getElementById("total-fijo");
+    totalElemento.classList.add("animar");
+
+    setTimeout(() => {
+        totalElemento.classList.remove("animar");
+    }, 300);
 }
 //Validación Original
 
@@ -66,7 +81,8 @@ function calcularTotal() {
     
 
         let nombre = document.getElementById("nombre").value.trim();
-        console.log("entra Validacion");
+        console.log("entra Validacion de envío");
+        //alert("entra a rutina enviar");
         if (nombre.trim() === "") {
             alert("Por favor ingrese su nombre");
             return;
@@ -94,7 +110,7 @@ function calcularTotal() {
 
         let precio = precios_unitario[tipo_h][unidad_med];
         let cantidad = document.getElementById("cantidad").value;
-        //alert("Regristrando tu pedido \n Se requieren "+ cantidad+" "+unidad_med_desc+" de Huevo a precio "+precio);
+        //alert("Registrando tu pedido \n Se requieren "+ cantidad+" "+unidad_med_desc+" de Huevo a precio "+precio);
 
         let total = precio * cantidad;
 
@@ -115,7 +131,7 @@ function calcularTotal() {
         mensajeExito.style.display = 'block';
         // 🔥 Saber qué botón se presionó
         let accion = e.submitter.value;
-
+        
         if (accion === "whatsapp") {
             
             enviarWhatsApp(nombre, cantidad, unidad_med_desc, producto, tipo_h, precio, total,negocio, direccion, tipo_cliente);
@@ -130,6 +146,7 @@ function calcularTotal() {
             mensajeExito.style.display = 'none';
         }, 5000);
     });
+    
 
 
 
@@ -215,4 +232,9 @@ function guardarEnBD(nombre, producto, cantidad) {
             bancoInput.removeAttribute("required");
             boletaInput.removeAttribute("required");
         }
+    });
+
+    // desabilitando el botón de enviar, para que calcule
+    document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('[type="submit"]').disabled = true;
     });

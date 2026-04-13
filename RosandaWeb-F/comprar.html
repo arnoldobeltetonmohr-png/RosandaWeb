@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="imagenes/LogoFrescoGalanGris.png" alt="Rosanda">
+            <img src="imagenes/LogoFrescoGalanSVG.png" alt="Rosanda">
         </a>
 
        <nav class="menu">
@@ -24,17 +24,19 @@
             <a href="huevos.html">LOS HUEVOS</a>
             <a href="emprende.html">EMPRENDE</a>
             <a href="contacto.html">CONTACTO</a>
-            <a href="comprar.html">COMPRAR</a>
+            <a href="comprar.html">PEDIDOS</a>
         </nav>  
         <!-- <a href="#" class="btn-comprar">COMPRAR</a> -->
     </header>
 
     <!-- CONTENIDO -->
     <section class="comprar-layout">
+        
         <div class="comprar-img">
-            <h1>COMPRAR</h1>
-            <img src="imagenes/CarritoCompras.png">
+            <h1>PEDIDOS</h1>
+            <img src="imagenes/MostradorG.png" class="carrito-img">
         </div>
+        
         <div class="formulario-pedidos">
 
             <form action="#" method="POST" class="pedido-form">     
@@ -179,22 +181,20 @@
                 <!--
                 <h2>Total: Q<span id="total">0</span></h3>
                 -->
-                <div class="total-box">
-                    Total: Q<span id="total">0</span>
+                <div class="acciones-finales">
+                    <div class="grupo-botones">
+                        <button class="btn-secundario" type="button" onclick="calcularTotal()">
+                            Calcular
+                        </button>
+                        <button type="submit" value="whatsapp"class="btn-principal">
+                            Enviar Pedido
+                        </button>
+                    </div>
+                    <div class="total-box">
+                        Total: Q<span id="total">0</span>
+                    </div>
                 </div>
-                <!-- Política 
-                <div class="form-group full checkbox">
-                    <input type="checkbox" required>
-                    <span>Acepto la política de privacidad.</span>
-                </div>
-                -->
-                <!--Botón de Cálcular -->
-                <button class="btn-principal" type="button" onclick="calcularTotal()">Calcular</button>
 
-                <!-- Botón -->
-                 <button type="submit" name="accion" value="whatsapp" class="btn-principal">
-                    Enviar Pedido 
-                </button>
                 <div class="form-group full">
                     <!--
                     <button type="submit" class="btn-enviar">
@@ -219,19 +219,28 @@
             ✅ Pedido enviado con éxito. Nos pondremos en contacto pronto.
     </div>
     <div class="cta-footer">
-
         <div class="linea">
             <!-- <span class="icono">🐔Gallina</span> -->
-             <!-- 
-            <img src="imagenes/Gallologo.png" class="icono" width="70"> -->
-            <span class="icono">🍳</span>
+            <img src="imagenes/Boxegg2.png" class="icono" width="70"> 
+            <!-- <span class="icono">🍳</span> -->
         </div>
+
             <a href="https://wa.me/50251465011?text=Hola%20🍳%20quiero%20hacer%20un%20pedido%20de%20huevos%20🥚%20con%20Huevos%20Frescos%20Galán.%20¿Me%20pueden%20apoyar%3F" 
     class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
             </a>
     </div>
         
-    
+    <div class="barra-checkout">
+
+        <div class="total-box">
+            Total: Q<span id="total-fijo">0</span>
+        </div>
+        <!--
+        <button class="btn-principal" onclick="enviarPedido()">
+            Enviar Pedido
+        </button>
+        -->
+    </div>
 
     <footer class="footer-pro">
         <p>© 2026 VisionAR Tech - Arnoldo | Todos los derechos reservados</p>
